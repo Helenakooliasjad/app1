@@ -89,7 +89,7 @@ if content_input:
 
     llm = load_LLM(openai_api_key=openai_api_key)
 
-    prompt_with_content = prompt.format(agegroup=option_agegroup, necessity=necessity_input, content=content_input)
+    prompt_with_content = prompt.format(agegroup=option_agegroup, necessity=hobby_input, content=content_input)
 
     formatted_content = llm(prompt_with_content)
 
